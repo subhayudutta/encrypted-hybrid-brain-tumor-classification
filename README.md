@@ -6,5 +6,5 @@ This repository contains the implementation of a framework that integrates **hom
 The model is trained and evaluated on the [Kaggle Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset).
 
 ## 📜 License
-This project is licensed under the GPL-3.0 License.
+This project is licensed under the Apache License 2.0.
 
