@@ -111,6 +111,29 @@ dataset/
 
 - SHAP is used to explain model predictions and feature contributions.
 
+## Encrypted Inference Configuration
+
+The homomorphic encryption experiments use the CKKS scheme implemented via the TenSEAL library. Configuration parameters used in the manuscript are provided within the notebook to ensure reproducibility.
+
+### CKKS Parameters
+- Polynomial modulus degree: 8192
+- Coefficient modulus: [60, 40, 40, 60]
+- Security level: ~128-bit
+- Polynomial activation approximation: Degree-2
+- Encrypted feature vector size: 112 dimensions
+
+### Reproducing Encrypted Inference
+
+Encrypted inference experiments can be reproduced by executing the following sections in the notebook:
+
+1. CKKS context initialization
+2. Key generation (public and secret keys)
+3. Feature encryption
+4. Encrypted linear inference
+5. Decryption and prediction
+
+All encryption parameters and inference configurations are defined within the notebook cells to ensure transparent and reproducible experimentation.
+
 ## Reproducibility Statement
 
 All experiments and results reported in the associated manuscript can be reproduced using the provided Jupyter Notebook and the publicly available dataset referenced above.
